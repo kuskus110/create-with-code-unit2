@@ -4434,9 +4434,10 @@ GameObject:
   - component: {fileID: 6366130420491935278}
   - component: {fileID: 6366130420499404762}
   - component: {fileID: 4097066472244935587}
+  - component: {fileID: -8268939146374400084}
   m_Layer: 0
-  m_Name: Animal1
-  m_TagString: Untagged
+  m_Name: Animal1_Beagle
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4524,6 +4525,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!65 &-8268939146374400084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6366130420492244856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1623269, y: 0.20259792, z: 0.27054036}
+  m_Center: {x: 0.0025621455, y: 0.0898473, z: 0.031546973}
 --- !u!1 &6366130420492247652
 GameObject:
   m_ObjectHideFlags: 0
