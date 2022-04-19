@@ -5,19 +5,14 @@ public class AnimalSpawner : MonoBehaviour
 {
     #region Variables
     public List<GameObject> animals;
+    public Quaternion spawnRotation;
     public float spawnRate = 1.5f;
-    public float spawnPosZ = 18f;
-    public Transform leftWall;
-    public Transform rightWall;
-    private float leftBoundaryX;
-    private float rightBoundaryX;
-    private System.Random sysRnd = new System.Random();
+    [Range(0, 15)] public float spawnRangeX;
+    [Range(0, 10)] public float spawnRangeZ;
     #endregion
 
     void Start()
     {
-        leftBoundaryX = leftWall.position.x;
-        rightBoundaryX = rightWall.position.x;
         InvokeRepeating(nameof(SpawnRandomAnimal), 2f, spawnRate);
     }
 
@@ -28,7 +23,9 @@ public class AnimalSpawner : MonoBehaviour
 
     void SpawnRandomAnimal() {
         GameObject rndAnimal = animals[Random.Range(0, animals.Count)];
-        Vector3 rndPos = new Vector3(Random.Range(leftBoundaryX, rightBoundaryX), 0, spawnPosZ);
-        Instantiate(rndAnimal, rndPos, rndAnimal.transform.rotation);
+        float spawnPosX = Random.Range(transform.position.x - spawnRangeX, transform.position.x + spawnRangeX);
+        float spawnPosZ = Random.Range(transform.position.z - spawnRangeZ, transform.position.z + spawnRangeZ);
+        Vector3 rndPos = new Vector3(spawnPosX, 0, spawnPosZ);
+        Instantiate(rndAnimal, rndPos, spawnRotation);
     }
 }
