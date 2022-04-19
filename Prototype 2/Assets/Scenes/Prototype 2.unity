@@ -718,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910853628}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -1.6, y: 0, z: 43.1}
+  m_LocalPosition: {x: -1.6, y: 0, z: 16.98}
   m_LocalScale: {x: 3.69, y: 1, z: 11.8}
   m_Children: []
   m_Father: {fileID: 992285706}
@@ -749,7 +749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7bb3294e33213242ba4abccae611ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTagWhitelist: []
+  gameTagWhitelist:
+  - Food
   destroySelf: 0
 --- !u!23 &910853632
 MeshRenderer:
@@ -1121,7 +1122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128833647}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -1.6, y: 0, z: -21.4}
+  m_LocalPosition: {x: -1.6, y: 0, z: -2.2}
   m_LocalScale: {x: 3.69, y: 1, z: 11.8}
   m_Children: []
   m_Father: {fileID: 992285706}
@@ -1168,7 +1169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7bb3294e33213242ba4abccae611ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTagWhitelist: []
+  gameTagWhitelist:
+  - Animal
   destroySelf: 0
 --- !u!23 &2128833652
 MeshRenderer:
@@ -1280,7 +1282,10 @@ MonoBehaviour:
   speed: 25
   leftWall: {fileID: 1471701202}
   rightWall: {fileID: 329519007}
+  topWall: {fileID: 910853629}
+  bottomWall: {fileID: 2128833648}
   horizontalInput: 0
+  verticalInput: 0
 --- !u!64 &2134468243
 MeshCollider:
   m_ObjectHideFlags: 0
