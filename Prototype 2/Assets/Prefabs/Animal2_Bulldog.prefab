@@ -4082,6 +4082,8 @@ GameObject:
   - component: {fileID: 6854700938548985505}
   - component: {fileID: 3607711633614554588}
   - component: {fileID: 5959044802813454960}
+  - component: {fileID: 8577722165826875280}
+  - component: {fileID: -8845916660982837158}
   m_Layer: 0
   m_Name: Animal2_Bulldog
   m_TagString: Animal
@@ -4185,6 +4187,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19413204, y: 0.18555999, z: 0.2627161}
   m_Center: {x: -0.00017065728, y: 0.09397414, z: 0.023467395}
+--- !u!114 &8577722165826875280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6854700938539424797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c648a64234602634b86364624167c4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8845916660982837158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6854700938539424797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bb3294e33213242ba4abccae611ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTagWhitelist:
+  - None
+  destroySelf: 1
 --- !u!1 &6854700938539425669
 GameObject:
   m_ObjectHideFlags: 0

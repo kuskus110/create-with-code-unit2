@@ -12,8 +12,8 @@ public class DestroyCollidingObjects : MonoBehaviour
     #endregion
 
     void OnTriggerEnter(Collider other) {
-        bool whielistNotEmpty = gameTagWhitelist.Any();
-        if (whielistNotEmpty && gameTagWhitelist.Contains(other.tag) || !whielistNotEmpty) {
+        bool whitelistNotEmpty = gameTagWhitelist.Any();
+        if (whitelistNotEmpty && gameTagWhitelist.Contains(other.tag) || !whitelistNotEmpty) {
             Destroy(other.gameObject);
         }
         if (destroySelf) {

@@ -4435,6 +4435,8 @@ GameObject:
   - component: {fileID: 6366130420499404762}
   - component: {fileID: 4097066472244935587}
   - component: {fileID: -8268939146374400084}
+  - component: {fileID: 3675645243978990019}
+  - component: {fileID: -7733447654531165164}
   m_Layer: 0
   m_Name: Animal1_Beagle
   m_TagString: Animal
@@ -4538,6 +4540,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1623269, y: 0.20259792, z: 0.27054036}
   m_Center: {x: 0.0025621455, y: 0.0898473, z: 0.031546973}
+--- !u!114 &3675645243978990019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6366130420492244856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c648a64234602634b86364624167c4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7733447654531165164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6366130420492244856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bb3294e33213242ba4abccae611ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTagWhitelist:
+  - None
+  destroySelf: 1
 --- !u!1 &6366130420492247652
 GameObject:
   m_ObjectHideFlags: 0
