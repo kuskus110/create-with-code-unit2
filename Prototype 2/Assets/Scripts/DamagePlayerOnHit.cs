@@ -8,7 +8,8 @@ public class DamagePlayerOnHit : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) {
-            other.GetComponent<PlayerLives>().HitPlayer();
+            other.GetComponent<PlayerLives>().DamagePlayer();
+            Destroy(gameObject);
         }
     }
 

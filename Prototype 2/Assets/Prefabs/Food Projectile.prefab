@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTagWhitelist:
-  - Animal
+  - None
   destroySelf: 1
 --- !u!54 &-7269953024649351420
 Rigidbody:
@@ -156,4 +156,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01325833c1617e24d867b6c1b645baef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesGameTag: Animal
+  animalGameTag: Animal

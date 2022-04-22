@@ -19,7 +19,7 @@ public class PlayerLives : MonoBehaviour
         }
     }
 
-    public void HitPlayer() {
+    public void DamagePlayer() {
         playerLives -= 1;
         print("Lives = " + playerLives);
     }
