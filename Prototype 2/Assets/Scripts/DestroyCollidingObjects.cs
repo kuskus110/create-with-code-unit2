@@ -12,7 +12,7 @@ public class DestroyCollidingObjects : MonoBehaviour
     #endregion
 
     void OnTriggerEnter(Collider other) {
-        bool whitelistNotEmpty = gameTagWhitelist.Any();
+        bool whitelistNotEmpty = gameTagWhitelist.Count > 0;
         if (whitelistNotEmpty && gameTagWhitelist.Contains(other.tag) || !whitelistNotEmpty) {
             Destroy(other.gameObject);
         }
